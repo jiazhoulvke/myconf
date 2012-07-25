@@ -17,7 +17,8 @@ URxvt.saveLines: 65535
 URxvt.termName: rxvt
 
 !!终端标题
-URxvt.title: Rxvt-Unicode
+URxvt.title: rxvt-unicode
+
 URxvt.buffered: True
 
 !!颜色设置
