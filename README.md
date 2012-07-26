@@ -1,16 +1,16 @@
-## linux配置文件 ##
+## 我的linux配置文件 ##
 
-### 使用方法 ###
+### 一、使用方法 ###
 
     git clone https://github.com/jiazhoulvke/myconf.git ~/.myconf
     cd ~/.myconf/
     ./setup.sh
     
-### 文件介绍 ###
+### 二、文件介绍 ###
 
 #### urxvt配置 ####
-* *~/.Xdefault* urxvt配置文件
-* *~/.myconf/urxvt/* urxvt的perl扩展
+* *.Xdefault* urxvt配置文件
+* *urxvt* urxvt的perl扩展
 
 #### bash配置 ####
 *.bashrc* bash配置文件
