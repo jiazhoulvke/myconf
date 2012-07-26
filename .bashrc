@@ -16,10 +16,10 @@ if [ -f ~/.agent.env ]; then
     if ps x | grep -v grep | grep -q $SSH_AGENT_PID ; then
         #echo "Stale agent file found. Spawning new agent..."
         eval `ssh-agent |tee ~/.agent.env`
-        ssh-add ~/.ssh/id_rsa
+        ssh-add
     fi
 else
     #echo "Starting ssh-agent..."
     eval `ssh-agent |tee ~/.agent.env`
-    ssh-add ~/.ssh/id_rsa
+    ssh-add
 fi
