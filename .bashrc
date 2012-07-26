@@ -9,17 +9,3 @@ alias llt='ls -rtlh'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-
-# Enable ssh-agent for ssh keys
-if [ -f ~/.agent.env ]; then
-    . ~/.agent.env >/dev/null
-    if ps x | grep -v grep | grep -q $SSH_AGENT_PID ; then
-        #echo "Stale agent file found. Spawning new agent..."
-        eval `ssh-agent |tee ~/.agent.env`
-        ssh-add
-    fi
-else
-    #echo "Starting ssh-agent..."
-    eval `ssh-agent |tee ~/.agent.env`
-    ssh-add
-fi
