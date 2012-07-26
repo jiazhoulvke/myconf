@@ -10,7 +10,7 @@
 
 #### urxvt配置 ####
 * *.Xdefault* urxvt配置文件
-* *urxvt* urxvt的perl扩展
+* *urxvt/* urxvt的perl扩展目录
 
 #### bash配置 ####
 * *.bashrc* bash配置文件
@@ -21,4 +21,3 @@
 
 #### screen配置 ####
 * *.screenrc* screen配置文件
- 
