@@ -83,7 +83,7 @@ URxvt.font: xft:Dejavu Sans Mono:size=12:style=Regular:antialias=True,xft:文泉
 URxvt.boldfont: xft:Dejavu Sans Mono:size=12:style=Bold:antialias=True,xft:文泉驿等宽微米黑:size=12:style=Bold:antialias=True
 
 !!Perl扩展
-URxvt.perl-lib: ./.urxvt
+URxvt.perl-lib: ./.myconf/urxvt/
 URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,url-select
 !!matcher
 URxvt.urlLauncher: chromium
