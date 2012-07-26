@@ -13,11 +13,11 @@
 * *urxvt* urxvt的perl扩展
 
 #### bash配置 ####
-*.bashrc* bash配置文件
+* *.bashrc* bash配置文件
 
 #### tmux配置 ####
 * *.tmux.conf* tmux配置文件
 * *tmuxstatusline.sh* tmux状态栏脚本
 
 #### screen配置 ####
-*.screenrc* screen配置文件
+* *.screenrc* screen配置文件
