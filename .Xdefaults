@@ -84,7 +84,8 @@ URxvt.boldfont: xft:Dejavu Sans Mono:size=12:style=Bold:antialias=True,xft:文�
 
 !!Perl扩展
 URxvt.perl-lib: ./.myconf/urxvt/
-URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,url-select
+!!URxvt.perl-ext-common: default,matcher,clipboard,keyboard-select,url-select
+URxvt.perl-ext-common: default,matcher,clipboard
 !!matcher
 URxvt.urlLauncher: chromium
 URxvt.underlineURLs: True
@@ -97,7 +98,7 @@ URxvt.keysym.Mod4-c:   perl:clipboard:copy
 URxvt.keysym.Mod4-v:   perl:clipboard:paste
 URxvt.keysym.Mod4-C-v: perl:clipboard:paste_escaped
 !!url-select
-URxvt.keysym.Mod4-C-u: perl:url-select:select_next
+!!URxvt.keysym.Mod4-C-u: perl:url-select:select_next
 !!keyboard-select
-URxvt.keysym.Mod4-Escape: perl:keyboard-select:activate
-URxvt.keysym.Mod4-s: perl:keyboard-select:search
+!URxvt.keysym.Mod4-Escape: perl:keyboard-select:activate
+!URxvt.keysym.Mod4-s: perl:keyboard-select:search
