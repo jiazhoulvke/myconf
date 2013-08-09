@@ -19,7 +19,8 @@
 
 ### 三、截图
 
-![截图](https://raw.github.com/jiazhoulvke/myconf/master/screenshot.png)
+![截图1](https://raw.github.com/jiazhoulvke/myconf/master/screenshot.png)
 
+![截图2](https://raw.github.com/jiazhoulvke/myconf/master/screenshot2.png)
 
 _更新于2013-08-10 01:58:41_
