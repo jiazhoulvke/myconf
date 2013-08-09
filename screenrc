@@ -1,3 +1,4 @@
+escape ^Gg
 hardstatus alwayslastline
 hardstatus string "%-w%{= BW}%50>%n %t%{-}%+w%<"
 terminfo xterm*|rxvt ti@:te@
@@ -9,7 +10,7 @@ defscrollback 1000
 msgwait 5
 msgminwait 2
 pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
-startup_message off # default: on
+startup_message off
 vbell off
 vbell_msg "   Wuff  ----  Wuff!!  "
 nethack on
