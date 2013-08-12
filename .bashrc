@@ -9,6 +9,7 @@ alias llt='ls -rtlh'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias gengxin='sudo apt-get update && sudo apt-get upgrade'
 
 if [ -f "$HOME/.bashrc_local" ];then
     . "$HOME/.bashrc_local"
