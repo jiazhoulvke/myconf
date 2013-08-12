@@ -15,3 +15,5 @@ eval `dircolors ~/.myconf/dircolors.ansi-dark`
 if [ -f "$HOME/.bashrc_local" ];then
     . "$HOME/.bashrc_local"
 fi
+
+# vim: filetype=sh

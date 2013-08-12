@@ -110,3 +110,5 @@ URxvt.keysym.Mod4-C-u: perl:url-select:select_next
 !keyboard-select
 URxvt.keysym.Mod4-Escape: perl:keyboard-select:activate
 URxvt.keysym.Mod4-f: perl:keyboard-select:search
+
+! vim: filetype=xdefaults
