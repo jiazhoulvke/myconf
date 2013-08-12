@@ -1,10 +1,7 @@
 escape ^Gg
-#caption always "%?%F%{-b 4w}%:%{-b bb}%? %H | %l | %m-%d %c |%?%F%{-b 4w}%?%L=%-Lw%45>%{-b w4}%n%f* %t%{-}%+Lw%-0<"
-#caption always "%{wb}%l | %?%F%{-b 4w}%?%L=%-Lw%45>%{-b w4}%n%f* %t%{-}%+Lw%-0<"
-#caption always "%{wb}%l | %?%F%?%L=%-Lw%45>%n%f* %t%+Lw%-0<"
 hardstatus alwayslastline
-#hardstatus string " %-w%{= BW}%50>%n:%t%{-}%+w%< |"
-#hardstatus alwayslastline '%{Yk}%-w%{.Yk}%n %t%{-}%+w %=%{.w}' 
+hardstatus string " %-w%{= BW}%50>%n:%t%{-}%+w%< |"
+hardstatus alwayslastline '%{Yk}%-w%{.Yk}%n %t%{-}%+w %=%{.w}' 
 backtick 1 5 5 uptime
 hardstatus alwayslastline '%1`' 
 #hardstatus string "%{wb}%-W %n:%t |"

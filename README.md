@@ -8,16 +8,19 @@
     
 ### 二、文件介绍 ###
 
-#### urxvt配置 ####
-* *.Xdefault* urxvt配置文件
-* *urxvt/* urxvt的perl扩展目录
+* *Xdefault*  (urxvt配置文件)
+* *urxvt/*  (urxvt的perl扩展目录)
+* *dircolors.ansi-dark*  (ls命令配色)
+* *bashrc*  (bash配置文件)
+* *tmux.conf*  (tmux配置文件)
+* *tmuxstatusline.sh*  (tmux状态栏脚本)
+* *screenrc*  (screen配置文件)
+* *DejaVuSansMono-Powerline.ttf*  (urxvt使用的字体)
 
-#### bash配置 ####
-* *.bashrc* bash配置文件
+### 三、截图
 
-#### tmux配置 ####
-* *.tmux.conf* tmux配置文件
-* *tmuxstatusline.sh* tmux状态栏脚本
+![截图1](https://raw.github.com/jiazhoulvke/myconf/master/screenshot.png)
 
-#### screen配置 ####
-* *.screenrc* screen配置文件
+![截图2](https://raw.github.com/jiazhoulvke/myconf/master/screenshot2.png)
+
+_更新于2013-08-10 01:58:41_
