@@ -7,6 +7,7 @@ alias llt='ls -rtlh'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias gengxin='sudo apt-get update && sudo apt-get upgrade'
 
 #https://github.com/seebi/dircolors-solarized
 eval `dircolors ~/.myconf/dircolors.ansi-dark`
@@ -14,3 +15,5 @@ eval `dircolors ~/.myconf/dircolors.ansi-dark`
 if [ -f "$HOME/.bashrc_local" ];then
     . "$HOME/.bashrc_local"
 fi
+
+# vim: filetype=sh

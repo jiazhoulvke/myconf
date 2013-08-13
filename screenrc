@@ -1,9 +1,14 @@
 escape ^Gg
 hardstatus alwayslastline
-hardstatus string "%-w%{= BW}%50>%n %t%{-}%+w%<"
+hardstatus string " %-w%{= BW}%50>%n:%t%{-}%+w%< |"
+hardstatus alwayslastline '%{Yk}%-w%{.Yk}%n %t%{-}%+w %=%{.w}' 
+backtick 1 5 5 uptime
+hardstatus alwayslastline '%1`' 
+#hardstatus string "%{wb}%-W %n:%t |"
 terminfo xterm*|rxvt ti@:te@
 terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 terminfo xterm* 'XT:hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+#掉线时自动detach
 autodetach on
 altscreen on
 defscrollback 1000
@@ -15,3 +20,4 @@ vbell off
 vbell_msg "   Wuff  ----  Wuff!!  "
 nethack on
 defutf8 on
+shell -$SHELL
