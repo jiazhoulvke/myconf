@@ -7,6 +7,9 @@ alias llt='ls -rtlh'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias ggpush='git push origin master'
+alias ggpull='git pull origin master'
+alias ggcommit='git commit -a'
 alias gengxin='sudo apt-get update && sudo apt-get upgrade'
 
 #https://github.com/seebi/dircolors-solarized
