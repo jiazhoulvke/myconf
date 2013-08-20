@@ -1,5 +1,7 @@
 !!$HOME/.Xdefaults
+Xft*dpi:                96
 
+!!!!!!!!!!!!!!!!! color !!!!!!!!!!!!!!!!!!!!
 ! Solarized color scheme for the X Window System
 ! http://ethanschoonover.com/solarized
 
@@ -23,14 +25,6 @@
 #define S_base2         #eee8d5
 #define S_base3         #fdf6e3
 
-URxvt*background:              S_base03
-URxvt*foreground:              S_base0
-URxvt*fading:                  40
-URxvt*fadeColor:               S_base03
-URxvt*cursorColor:             S_base1
-URxvt*pointerColorBackground:  S_base01
-URxvt*pointerColorForeground:  S_base1
-
 *color0:                  S_base02
 *color1:                  S_red
 *color2:                  S_green
@@ -47,6 +41,72 @@ URxvt*pointerColorForeground:  S_base1
 *color13:                 S_violet
 *color14:                 S_base1
 *color15:                 S_base3
+
+!!!!!!!!!!!!!!!!!!!! xterm !!!!!!!!!!!!!!!!!!!1
+xterm*iconName:         xterm
+xterm*termName:         xterm-256color
+xterm*geometry:         80x25
+xterm*scrollBar:        false
+xterm*rightScrollBar:   true
+xterm*loginshell:       true
+xterm*cursorBlink:      true
+xterm*background:       S_base03
+xterm*foreground:       S_base0
+xterm*borderLess:       true
+xterm*cursorUnderline:  true
+xterm*colorUL:          yellow
+xterm*colorBD:          white
+
+xterm*color0:                  S_base02
+xterm*color1:                  S_red
+xterm*color2:                  S_green
+xterm*color3:                  S_yellow
+xterm*color4:                  S_blue
+xterm*color5:                  S_magenta
+xterm*color6:                  S_cyan
+xterm*color7:                  S_base2
+xterm*color9:                  S_orange
+xterm*color8:                  S_base03
+xterm*color10:                 S_base01
+xterm*color11:                 S_base00
+xterm*color12:                 S_base0
+xterm*color13:                 S_violet
+xterm*color14:                 S_base1
+xterm*color15:                 S_base3
+
+!修正Alt不能正常使用的问题
+xterm*eightBitInput:    false
+xterm*altSendsEscape:   true
+
+!拷贝屏幕内容，包含所有颜色控制符。
+xterm*printAttributes:  2
+xterm*printerCommand:   cat > /tmp/xtermdump
+
+!快捷键定义：鼠标选择自动复制，ctrl-v粘贴，ctrl-p拷屏。
+xterm*VT100.Translations: #override \
+        Ctrl <KeyPress> V: insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0)\n\
+        <BtnUp>: select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+        Alt <KeyPress> P: print() \n
+
+!字体设置
+xterm*locate: true
+xterm*utf8: true
+xterm*utf8Title: true
+xterm*faceSize: 12
+xterm*faceName: DejaVu Sans Mono for Powerline:antialias=true
+xterm*faceNameDoublesize: WenQuanYi Micro Hei Mono:antialias=true
+xterm*cjkWidth: false
+
+
+!!!!!!!!!!!!!!!!!!!!! Urxvt !!!!!!!!!!!!!!!!!!!
+
+URxvt*background:              S_base03
+URxvt*foreground:              S_base0
+URxvt*fading:                  40
+URxvt*fadeColor:               S_base03
+URxvt*cursorColor:             S_base1
+URxvt*pointerColorBackground:  S_base01
+URxvt*pointerColorForeground:  S_base1
 
 
 !!输入法设置
@@ -93,7 +153,6 @@ URxvt.pointerBlank: True
 URxvt.borderLess: False
 
 !!字体设置
-Xft.dpi: 96
 URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12:style=Regular:antialias=True,xft:文泉驿等宽微米黑:size=12:style=Regular:antialias=True
 URxvt.boldfont: xft:DejaVu Sans Mono for Powerline:size=12:style=Bold:antialias=True,xft:文泉驿等宽微米黑:size=12:style=Bold:antialias=True
 
