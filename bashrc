@@ -11,6 +11,12 @@ alias ggpush='git push origin master'
 alias ggpull='git pull origin master'
 alias ggcommit='git commit -a'
 alias gengxin='sudo apt-get update && sudo apt-get upgrade'
+alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
+
+shopt -s histappend
+PROMPT_COMMAND='history -a;echo -ne "\033]0;$PWD\007'
+HISTIMEFORMAT="%F %T"
+HISTSIZE=2048
 
 #https://github.com/seebi/dircolors-solarized
 eval `dircolors ~/.myconf/dircolors.ansi-dark`
