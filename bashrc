@@ -18,6 +18,8 @@ PROMPT_COMMAND='history -a;echo -ne "\033]0;$PWD\007'
 HISTIMEFORMAT="%F %T"
 HISTSIZE=2048
 
+source $HOME/.myconf/z.sh
+
 #https://github.com/seebi/dircolors-solarized
 eval `dircolors ~/.myconf/dircolors.ansi-dark`
 
