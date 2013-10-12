@@ -16,7 +16,7 @@ alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
 shopt -s histappend
 HISTCONTROL=ignoredups
 HISTIGNORE="[   ]*:&:bg:fg:exit"
-PROMPT_COMMAND='history -a; echo -ne "\033]0;$PWD\007; $PROMPT_COMMAND;'
+PROMPT_COMMAND='history -a ~/.bash_history; echo -ne "\033]0;$PWD\007"; $PROMPT_COMMAND;'
 HISTIMEFORMAT="%F %T"
 HISTSIZE=2048
 
