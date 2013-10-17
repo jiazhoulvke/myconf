@@ -1,4 +1,5 @@
 export PS1="${debian_chroot:+($debian_chroot)}\[\e[36;3;1m\]\w\[\e[35;1m\]\$\[\e[0m\]"
+alias ls='ls --color'
 alias ll='ls -lh'
 alias la='ls -ah'
 alias lla='ls -lah'
