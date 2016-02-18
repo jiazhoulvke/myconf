@@ -13,6 +13,8 @@ alias ggpull='git pull origin master'
 alias ggcommit='git commit -a'
 alias gengxin='sudo apt-get update && sudo apt-get upgrade'
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
+alias tmux='tmux -2'
+alias info='info --vi-keys'
 
 shopt -s histappend
 HISTCONTROL=ignoredups

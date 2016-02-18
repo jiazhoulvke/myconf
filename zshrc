@@ -45,7 +45,7 @@ ZSH_THEME="bureau"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( adb composer docker gem git go golang gulp laravel laravel4 laravel5 man mosh npm nvm pip pyenv python rake sudo supervisor systemd themes ubuntu virtualenv z zsh_reload)
+plugins=( adb composer docker gem git go golang gulp laravel laravel4 laravel5 man mosh pip pyenv python rake sudo supervisor systemd themes ubuntu virtualenv z zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
