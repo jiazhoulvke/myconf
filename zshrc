@@ -86,5 +86,6 @@ if [ -f "$HOME/.zshrc_local" ];then
 fi
 
 alias tmux='tmux -2'
+alias info='info --vi-keys'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
