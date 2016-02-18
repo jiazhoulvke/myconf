@@ -93,8 +93,9 @@ xterm*locate: true
 xterm*utf8: true
 xterm*utf8Title: true
 xterm*faceSize: 12
-xterm*faceName: DejaVu Sans Mono for Powerline:antialias=true
+xterm*faceName: Source Code Pro for Powerline:antialias=true
 xterm*faceNameDoublesize: WenQuanYi Micro Hei Mono:antialias=true
+xterm*xftAntialias:true
 xterm*cjkWidth: false
 
 
@@ -153,14 +154,14 @@ URxvt.pointerBlank: True
 URxvt.borderLess: False
 
 !!字体设置
-URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12:style=Regular:antialias=True,xft:文泉驿等宽微米黑:size=12:style=Regular:antialias=True
-URxvt.boldfont: xft:DejaVu Sans Mono for Powerline:size=12:style=Bold:antialias=True,xft:文泉驿等宽微米黑:size=12:style=Bold:antialias=True
+URxvt.font: xft:Source Code Pro for Powerline:size=12:style=Regular:antialias=True,xft:文泉驿等宽微米黑:size=12:style=Regular:antialias=True
+URxvt.boldfont: xft:Source Code Pro for Powerline:size=12:style=Bold:antialias=True,xft:文泉驿等宽微米黑:size=12:style=Bold:antialias=True
 
 !Perl扩展
 URxvt.perl-lib: ./.myconf/urxvt/
 URxvt.perl-ext-common: default,matcher,keyboard-select,url-select
 !matcher
-URxvt.urlLauncher: chromium-browser
+URxvt.urlLauncher: google-chrome
 !URxvt.urlLauncher: firefox
 URxvt.underlineURLs: True
 URxvt.matcher.button: o

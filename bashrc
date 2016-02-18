@@ -19,7 +19,7 @@ HISTCONTROL=ignoredups
 HISTIGNORE="[   ]*:&:bg:fg:exit"
 PROMPT_COMMAND='history -a ~/.bash_history; echo -ne "\033]0;$PWD\007"; $PROMPT_COMMAND;'
 HISTIMEFORMAT="%F %T"
-HISTSIZE=2048
+HISTSIZE=99999
 
 source $HOME/.myconf/z.sh
 
