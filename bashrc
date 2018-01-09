@@ -33,3 +33,5 @@ if [ -f "$HOME/.bashrc_local" ];then
 fi
 
 # vim: filetype=sh
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

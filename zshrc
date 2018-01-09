@@ -45,7 +45,7 @@ ZSH_THEME="bureau"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( adb composer docker gem git go golang gulp laravel laravel4 laravel5 man mosh pip pyenv python rake sudo supervisor systemd themes ubuntu virtualenv z zsh_reload)
+plugins=(composer docker git golang man pip sudo systemd z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,3 +89,6 @@ alias tmux='tmux -2'
 alias info='info --vi-keys'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias myproxy='export http_proxy=http://127.0.0.1:8118;export https_proxy=https://127.0.0.1:8118'
+alias noproxy='export http_proxy=;export https_proxy='
