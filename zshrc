@@ -39,7 +39,7 @@ DISABLE_AUTO_UPDATE="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=~/.zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -56,6 +56,8 @@ plugins=(
 	sudo
 	systemd
 	z
+	#zsh-autosuggestions 
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
