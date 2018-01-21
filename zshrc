@@ -11,7 +11,7 @@ ZSH_THEME="bureau"
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -45,7 +45,18 @@ ZSH_THEME="bureau"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(composer docker git golang man pip sudo systemd z)
+plugins=(
+	command-not-found
+	composer 
+	docker
+	git
+	golang
+	man
+	pip
+	sudo
+	systemd
+	z
+)
 
 source $ZSH/oh-my-zsh.sh
 

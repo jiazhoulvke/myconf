@@ -92,9 +92,15 @@ xterm*VT100.Translations: #override \
 xterm*locate: true
 xterm*utf8: true
 xterm*utf8Title: true
-xterm*faceSize: 12
-xterm*faceName: Source Code Pro for Powerline:antialias=true:autohint:true
-xterm*faceNameDoublesize: WenQuanYi Micro Hei Mono:antialias=true:autohint:true
+xterm*faceSize: 13
+!!xterm*faceName: Source Code Pro for Powerline:antialias=true:autohint:true
+!!xterm*faceNameDoublesize: WenQuanYi Micro Hei Mono:antialias=true:autohint:true
+!!xterm*faceName: Sarasa Mono SC:antialias=false:autohint:false
+!!xterm*faceName: Monaco:antialias=true:autohint:false
+xterm*faceName: DejaVu Sans Mono for Powerline:antialias=true:autohint:false
+xterm*faceNameDoublesize: Sarasa Mono SC:antialias=false:autohint:true
+!!xterm*faceName: Sarasa Mono SC:antialias=false:autohint:true
+!!xterm*faceNameDoublesize: Noto Sans Mono CJK SC:antialias=true:autohint:true
 xterm*xftAntialias:true
 xterm*cjkWidth: false
 
@@ -154,8 +160,10 @@ URxvt.pointerBlank: True
 URxvt.borderLess: False
 
 !!字体设置
-URxvt.font: xft:Source Code Pro for Powerline:size=12:style=Regular:antialias=True:autohint=true,xft:文泉驿等宽微米黑:size=12:style=Regular:antialias=True:autohint=true
-URxvt.boldfont: xft:Source Code Pro for Powerline:size=12:style=Bold:antialias=True:autohint:true,xft:文泉驿等宽微米黑:size=12:style=Bold:antialias=True:autohint=true
+!!URxvt.font: xft:Source Code Pro for Powerline:size=12:style=Regular:antialias=True:autohint=true,xft:文泉驿等宽微米黑:size=12:style=Regular:antialias=True:autohint=true
+!!URxvt.boldfont: xft:Source Code Pro for Powerline:size=12:style=Bold:antialias=True:autohint:true,xft:文泉驿等宽微米黑:size=12:style=Bold:antialias=True:autohint=true
+URxvt.font: xft:DejaVu Sans Mono for Powerline:size=12:style=Regular:antialias=True:autohint=true,xft:文泉驿等宽微米黑:size=12:style=Regular:antialias=True:autohint=true
+URxvt.boldfont: xft:DejaVu Sans Mono for Powerline:size=12:style=Bold:antialias=True:autohint:true,xft:文泉驿等宽微米黑:size=12:style=Bold:antialias=True:autohint=true
 
 !Perl扩展
 URxvt.perl-lib: ./.myconf/urxvt/
