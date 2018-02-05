@@ -98,6 +98,10 @@ if [ -f "$HOME/.zshrc_local" ];then
     . "$HOME/.zshrc_local"
 fi
 
+if [ -f "$HOME/Dropbox/cli_conf/zshrc_local" ];then
+    . "$HOME/Dropbox/cli_conf/zshrc_local"
+fi
+
 alias tmux='tmux -2'
 alias info='info --vi-keys'
 
