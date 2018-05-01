@@ -20,7 +20,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+export DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -104,8 +104,11 @@ fi
 
 alias tmux='tmux -2'
 alias info='info --vi-keys'
+alias ll='ls -lSrh'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH=$PATH:~/.local/bin
 
 alias myproxy='export http_proxy=http://127.0.0.1:8118;export https_proxy=https://127.0.0.1:8118'
 alias noproxy='export http_proxy=;export https_proxy='
