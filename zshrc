@@ -102,6 +102,8 @@ if [ -f "$HOME/Dropbox/cli_conf/zshrc_local" ];then
     . "$HOME/Dropbox/cli_conf/zshrc_local"
 fi
 
+export PATH=$PATH:/home/jiazhoulvke/.local/bin
+
 alias tmux='tmux -2'
 alias info='info --vi-keys'
 
