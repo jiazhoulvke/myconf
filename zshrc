@@ -92,7 +92,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ "$(uname -s)" == "Darwin" ];then
+if [[ "$(uname -s)" = "Darwin" ]];then
 	eval `gdircolors ~/.myconf/dircolors.ansi-dark`
 else
 	eval `dircolors ~/.myconf/dircolors.ansi-dark`
