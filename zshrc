@@ -113,6 +113,8 @@ alias info='info --vi-keys'
 alias ll='ls -lSrh'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS="--height 50% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
+
 
 export PATH=$PATH:~/.local/bin
 
