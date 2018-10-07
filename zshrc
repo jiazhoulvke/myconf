@@ -1,5 +1,8 @@
 # config: {{{1
 
+# emacs风格按键绑定
+bindkey -e
+
 # path: {{{2
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.local/bin
