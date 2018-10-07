@@ -1,99 +1,22 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+# config: {{{1
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="bureau"
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-export DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=~/.zsh
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	command-not-found
-	composer 
-	docker
-	git
-	golang
-	man
-	pip
-	sudo
-	systemd
-	z
-	#zsh-autosuggestions 
-	zsh-syntax-highlighting
-)
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
+# path: {{{2
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:~/.local/bin
+# }}}
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# alias: {{{2
+alias tmux='tmux -2'
+alias info='info --vi-keys'
+alias ll='ls -lSrh'
+alias myproxy='export http_proxy=http://127.0.0.1:8118;export https_proxy=http://127.0.0.1:8118'
+alias noproxy='export http_proxy=;export https_proxy='
+# }}}
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
+# other: {{{2
 if [[ "$(uname -s)" = "Darwin" ]];then
-	eval `gdircolors ~/.myconf/dircolors.ansi-dark`
+	#eval `gdircolors ~/.myconf/dircolors.ansi-dark`
 else
 	eval `dircolors ~/.myconf/dircolors.ansi-dark`
 fi
@@ -106,17 +29,39 @@ if [ -f "$HOME/Dropbox/cli_conf/zshrc_local" ];then
     . "$HOME/Dropbox/cli_conf/zshrc_local"
 fi
 
-export PATH=$PATH:/home/jiazhoulvke/.local/bin
-
-alias tmux='tmux -2'
-alias info='info --vi-keys'
-alias ll='ls -lSrh'
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--height 50% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
+# }}}
 
+# }}}
 
-export PATH=$PATH:~/.local/bin
+# zplug: {{{1
 
-alias myproxy='export http_proxy=http://127.0.0.1:8118;export https_proxy=http://127.0.0.1:8118'
-alias noproxy='export http_proxy=;export https_proxy='
+#install: curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+source ~/.zplug/init.zsh
+
+#theme
+zplug "themes/bureau", from:oh-my-zsh, as:theme
+
+zplug "changyuheng/fz", defer:1
+zplug "rupa/z", use:z.sh
+
+# oh-my-zsh plugins: {{{2
+zplug "plugins/brew", from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "plugins/composer", from:oh-my-zsh
+zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/golang", from:oh-my-zsh
+zplug "plugins/jump", from:oh-my-zsh
+zplug "plugins/man", from:oh-my-zsh
+zplug "plugins/osx", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
+zplug "plugins/pip", from:oh-my-zsh
+zplug "plugins/sudo", from:oh-my-zsh
+zplug "plugins/systemd", from:oh-my-zsh
+zplug "plugins/zsh-syntax-highlighting", from:oh-my-zsh
+# }}}
+
+zplug load
+# }}}
+# vim: fdm=marker
