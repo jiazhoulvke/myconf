@@ -131,6 +131,7 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 # }}}
 
+# ubuntu安装插件前要先安装gawk,否则会报错
 zplug check || zplug install
 zplug load
 
