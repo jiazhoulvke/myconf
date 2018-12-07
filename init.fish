@@ -1,8 +1,3 @@
-# local config
-if test -e ~/.config/omf/init_local.fish
-    . ~/.config/omf/init_local.fish
-end
-
 # env {{{1
 set -xg PATH $PATH ~/.local/bin
 set -xg EDITOR nvim
@@ -27,3 +22,8 @@ alias noproxy='export http_proxy=;export https_proxy='
 # }}}
 
 # }}}
+
+# local config
+if test -e ~/.config/omf/init_local.fish
+    . ~/.config/omf/init_local.fish
+end
