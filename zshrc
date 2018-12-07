@@ -29,6 +29,7 @@ fi
 HISTSIZE=10000
 SAVEHIST=10000
 
+
 # Show history
 case $HIST_STAMPS in
   "mm/dd/yyyy") alias history='fc -fl 1' ;;
@@ -138,8 +139,10 @@ zplug load
 # plugins config: {{{2
 
 # zsh-history-substring-search {{{3
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+# bindkey '^[[A' history-substring-search-up
+# bindkey '^[[B' history-substring-search-down
+bindkey '^[[A' history-beginning-search-backward
+bindkey '^[[B' history-beginning-search-forward
 # }}}
 
 # zsh-autosuggestions {{{3
