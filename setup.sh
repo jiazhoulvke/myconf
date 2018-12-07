@@ -14,4 +14,4 @@ ln -s ~/.myconf/urxvt/ ~/.urxvt
 ln -s ~/.myconf/screenrc ~/.screenrc
 cp ~/.myconf/tmux.conf ~/.tmux.conf
 mkdir ~/.fonts
-cp ~/.myconf/DejaVuSansMono-Powerline.ttf ~/.fonts/
+cp ~/.myconf/*.ttf ~/.fonts/
