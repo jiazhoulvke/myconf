@@ -16,8 +16,11 @@ export PATH=$PATH:~/.local/bin
 alias tmux='tmux -2'
 alias info='info --vi-keys'
 alias ll='ls -lSrh'
+alias vihuge='vim -n -u NONE -i NONE -N' # 编辑大文件用，不使用交换文件、vimrc、语法高亮、viminfo等
 alias myproxy='export http_proxy=http://127.0.0.1:8118;export https_proxy=http://127.0.0.1:8118'
 alias noproxy='export http_proxy=;export https_proxy='
+
+alias gdw='git diff --word-diff=color'
 # }}}
 
 # other: {{{2
@@ -28,6 +31,7 @@ if [ -z "$HISTFILE" ]; then
 fi
 HISTSIZE=10000
 SAVEHIST=10000
+
 
 # Show history
 case $HIST_STAMPS in
@@ -138,8 +142,10 @@ zplug load
 # plugins config: {{{2
 
 # zsh-history-substring-search {{{3
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+# bindkey '^[[A' history-substring-search-up
+# bindkey '^[[B' history-substring-search-down
+bindkey '^[[A' history-beginning-search-backward
+bindkey '^[[B' history-beginning-search-forward
 # }}}
 
 # zsh-autosuggestions {{{3
