@@ -32,6 +32,10 @@ if [ -f "$HOME/.bashrc_local" ];then
     . "$HOME/.bashrc_local"
 fi
 
-# vim: filetype=sh
+if [ -f "/etc/bash_completion" ];then
+    . /etc/bash_completion
+fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# vim: filetype=sh
