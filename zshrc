@@ -21,6 +21,7 @@ alias myproxy='export http_proxy=http://127.0.0.1:8118;export https_proxy=http:/
 alias noproxy='export http_proxy=;export https_proxy='
 
 alias gdw='git diff --word-diff=color'
+alias cpwd="pwd | tr -d '\n' | xsel -i -b" # 复制当前路径到剪贴板中
 # }}}
 
 # other: {{{2
@@ -74,7 +75,7 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # export FZF_DEFAULT_COMMAND='fd --type f'
-export FZF_DEFAULT_ COMMAND='ag -g ""'
+export FZF_DEFAULT_ COMMAND='ag --hidden --ignore .git -g ""'
 
 export FZF_DEFAULT_OPTS="--inline-info --layout=reverse"
 export FZF_CTRL_T_OPTS="--inline-info --height 50% --layout=reverse --preview '[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || [[ \$(file --mime {}) =~ image ]] && catimg -w 50 {} || (highlight -O ansi {} || cat {} || echo {}) 2> /dev/null | head -500'"
