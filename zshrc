@@ -69,8 +69,7 @@ fi
 # fzf {{{3
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# export FZF_DEFAULT_COMMAND='fd --type f'
-export FZF_DEFAULT_ COMMAND='ag -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 
 export FZF_DEFAULT_OPTS="--inline-info --layout=reverse"
 export FZF_CTRL_T_OPTS="--inline-info --height 50% --layout=reverse --preview '[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || [[ \$(file --mime {}) =~ image ]] && catimg -w 50 {} || (highlight -O ansi {} || cat {} || echo {}) 2> /dev/null | head -500'"
