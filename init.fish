@@ -23,6 +23,11 @@ alias myproxy='export http_proxy=http://127.0.0.1:8118;export https_proxy=http:/
 alias noproxy='export http_proxy=;export https_proxy='
 # }}}
 
+# mysql {{{2
+alias mysql33060='mysql -uroot -proot -h127.0.0.1 -P33060'
+alias mysql_docker='docker run --rm --name mysql_temp -p 33060:3306  -e MYSQL_ROOT_PASSWORD=root -d  mysql:8  --default-authentication-plugin=mysql_native_password'
+# }}}
+
 # }}}
 
 # local config
