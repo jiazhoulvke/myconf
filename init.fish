@@ -1,5 +1,5 @@
 # env {{{1
-set -xg PATH $PATH ~/.local/bin
+set -xg PATH $PATH ~/.local/bin /usr/local/sbin
 set -xg EDITOR nvim
 set -xg FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -l -g ""'
 # }}}
@@ -16,6 +16,7 @@ alias gco='git checkout'
 alias gst='git status'
 alias ggpull='git pull origin (git_branch_name)'
 alias ggpush='git push origin (git_branch_name)'
+alias gdw='git diff --word-diff'
 # }}}
 
 # proxy {{{2
