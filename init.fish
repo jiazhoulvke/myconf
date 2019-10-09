@@ -27,10 +27,13 @@ alias noproxy='export http_proxy=;export https_proxy='
 
 # mysql {{{2
 alias mysql33060='mysql -uroot -proot -h127.0.0.1 -P33060'
-alias mysql_docker='docker run --rm --name mysql_temp -p 33060:3306  -e MYSQL_ROOT_PASSWORD=root -d  mysql:8  --default-authentication-plugin=mysql_native_password'
+alias mysql33068='mysql -uroot -proot -h127.0.0.1 -P33060'
+alias mysql_docker='docker run --rm --name mysql_temp -p 33060:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:8 --default-authentication-plugin=mysql_native_password'
 # }}}
 
 # }}}
+
+#theme https://github.com/jiazhoulvke/theme-bira-jzlk
 
 # local config
 if test -e ~/.config/omf/init_local.fish
