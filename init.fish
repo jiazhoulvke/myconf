@@ -2,7 +2,7 @@
 set -xg PATH $PATH ~/.local/bin /usr/local/sbin
 set -xg EDITOR nvim
 set -xg FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -l -g ""'
-set -xg GOPROXY "https://goproxy.io"
+set -xg GOPROXY "https://goproxy.cn,direct"
 # }}}
 
 # alias {{{1
