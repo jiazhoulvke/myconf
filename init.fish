@@ -35,6 +35,7 @@ alias mysql_docker='docker run --rm --name mysql_temp -p 33060:3306 -e MYSQL_ROO
 # }}}
 
 #theme https://github.com/jiazhoulvke/theme-bira-jzlk
+#docker https://github.com/wfscheper/plugin-docker
 
 # local config
 if test -e ~/.config/omf/init_local.fish
