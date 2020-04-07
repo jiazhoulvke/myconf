@@ -8,6 +8,7 @@ set -xg GOPROXY "https://goproxy.cn,direct"
 # alias {{{1
 
 # misc {{{2
+alias myip='curl -s http://tbip.alicdn.com/api/queryip' # 获取ip信息
 alias vim='nvim'
 alias vihuge='vim -n -u NONE -i NONE -N' # 编辑大文件用，不使用交换文件、vimrc、语法高亮、viminfo等
 # }}}
