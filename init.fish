@@ -1,5 +1,5 @@
 # env {{{1
-set -xg PATH $PATH ~/.local/bin /usr/local/sbin
+set -xg PATH $PATH ~/.local/bin /usr/local/sbin ~/go/bin
 set -xg EDITOR nvim
 set -xg FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -l -g ""'
 set -xg GOPROXY "https://goproxy.cn,direct"
@@ -31,9 +31,14 @@ alias mysql33068='mysql -uroot -proot -h127.0.0.1 -P33060'
 alias mysql_docker='docker run --rm --name mysql_temp -p 33060:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql:8 --default-authentication-plugin=mysql_native_password'
 # }}}
 
+# ubuntu {{{2
+alias apt_proxy='sudo apt -c ~/.myconf/apt_proxy.conf'
+# }}}
+
 # }}}
 
 #theme https://github.com/jiazhoulvke/theme-bira-jzlk
+#docker https://github.com/wfscheper/plugin-docker
 
 # local config
 if test -e ~/.config/omf/init_local.fish
