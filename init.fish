@@ -40,6 +40,11 @@ alias apt_proxy='sudo apt -c ~/.myconf/apt_proxy.conf'
 #theme https://github.com/jiazhoulvke/theme-bira-jzlk
 #docker https://github.com/wfscheper/plugin-docker
 
+# ~/.alias
+if test -e ~/.alias
+    . ~/.alias
+end
+
 # local config
 if test -e ~/.config/omf/init_local.fish
     . ~/.config/omf/init_local.fish
