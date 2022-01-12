@@ -45,6 +45,10 @@ if test -e ~/.alias
     . ~/.alias
 end
 
+if test -e ~/.config/alias
+    . ~/.config/alias
+end
+
 # local config
 if test -e ~/.config/omf/init_local.fish
     . ~/.config/omf/init_local.fish
